@@ -10,28 +10,32 @@ display_url: "https://scottslawncare.netlify.app"
 logo_url: "/images/logo.png"
 
 collections:
-  - name: "gallery"
-    label: "Gallery Photos"
-    folder: "gallery"
-    create: true
-    slug: "{{slug}}"
-    extension: "json"
-    format: "json"
-    fields:
-      - {label: "Photo Title", name: "title", widget: "string"}
-      - {label: "Description", name: "description", widget: "text", required: false}
-      - label: "Category"
-        name: "category"
-        widget: "select"
-        options:
-          - {label: "Lawn Care", value: "lawn"}
-          - {label: "Spring Cleanups", value: "cleanup"}
-          - {label: "Landscaping", value: "landscape"}
-          - {label: "Docks & Hoists", value: "dock"}
-          - {label: "Before & After", value: "beforeafter"}
-          - {label: "Wood / Tree Cleanup", value: "wood"}
-          - {label: "Snow Plowing", value: "snow"}
-      - {label: "Photo", name: "image", widget: "image"}
+  - name: "gallery_manager"
+    label: "Gallery Manager"
+    files:
+      - file: "data/gallery.json"
+        label: "Gallery Photos"
+        name: "gallery"
+        fields:
+          - label: "Photos"
+            name: "photos"
+            widget: "list"
+            summary: "{{fields.title}} - {{fields.category}}"
+            fields:
+              - {label: "Photo Title", name: "title", widget: "string"}
+              - {label: "Description", name: "description", widget: "text", required: false}
+              - label: "Category"
+                name: "category"
+                widget: "select"
+                options:
+                  - {label: "Lawn Care", value: "lawn"}
+                  - {label: "Spring Cleanups", value: "cleanup"}
+                  - {label: "Landscaping", value: "landscape"}
+                  - {label: "Docks & Hoists", value: "dock"}
+                  - {label: "Before & After", value: "beforeafter"}
+                  - {label: "Wood / Tree Cleanup", value: "wood"}
+                  - {label: "Snow Plowing", value: "snow"}
+              - {label: "Photo", name: "image", widget: "image"}
 
   - name: "settings"
     label: "Business Settings"

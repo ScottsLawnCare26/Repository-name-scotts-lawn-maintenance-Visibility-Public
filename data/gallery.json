@@ -1,0 +1,28 @@
+{
+  "photos": [
+    {
+      "title": "Lawn Maintenance",
+      "description": "Mowing, trimming, and seasonal lawn care.",
+      "category": "lawn",
+      "image": "/images/gallery-lawn-1.jpg"
+    },
+    {
+      "title": "Spring Cleanup",
+      "description": "Leaf and debris removal with clean results.",
+      "category": "cleanup",
+      "image": "/images/gallery-cleanup-1.jpg"
+    },
+    {
+      "title": "Landscaping",
+      "description": "Mulch, rocks, flowers, bushes, and pathways.",
+      "category": "landscape",
+      "image": "/images/gallery-landscape-1.jpg"
+    },
+    {
+      "title": "Docks & Hoists",
+      "description": "Dock installation, hoist setup, and rebuilds.",
+      "category": "dock",
+      "image": "/images/gallery-dock-install-1.jpg"
+    }
+  ]
+}
