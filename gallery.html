@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gallery | Scott’s Lawn Maintenance</title>
+  <meta name="description" content="View Scott’s Lawn Maintenance project photos including lawn care, spring cleanups, landscaping, docks, hoists, and before and after transformations.">
+  <link rel="stylesheet" href="style.css">
+  <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+</head>
+<body>
+<header class="header">
+  <div class="header-inner">
+    <a class="logo-wrap" href="index.html">
+      <img src="images/logo.png" alt="Scott’s Lawn Maintenance logo">
+      <span>Scott’s Lawn Maintenance</span>
+    </a>
+
+    <button class="menu-btn" id="menuBtn">☰</button>
+
+    <nav class="nav" id="navMenu">
+      <a href="index.html">Home</a>
+      <a href="services.html">Services</a>
+      <a href="pricing.html">Pricing</a>
+      <a href="docks-hoists.html">Docks & Hoists</a>
+      <a href="gallery.html">Gallery</a>
+      <a href="reviews.html">Reviews</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<main class="section">
+  <div class="gallery-hero">
+    <span class="badge">Project Gallery</span>
+    <h1>Our Work</h1>
+    <p class="lead">
+      Browse lawn care, spring cleanups, landscaping, docks, hoists, and before & after transformations.
+    </p>
+  </div>
+
+  <div class="gallery-filters">
+    <button class="filter-btn active" data-filter="all">All</button>
+    <button class="filter-btn" data-filter="lawn">Lawn Care</button>
+    <button class="filter-btn" data-filter="cleanup">Spring Cleanups</button>
+    <button class="filter-btn" data-filter="landscape">Landscaping</button>
+    <button class="filter-btn" data-filter="dock">Docks & Hoists</button>
+    <button class="filter-btn" data-filter="beforeafter">Before & After</button>
+  </div>
+
+  <section class="gallery-grid-pro">
+    <article class="gallery-item" data-category="lawn">
+      <img src="images/gallery-lawn-1.jpg" alt="Lawn mowing and maintenance">
+      <div class="gallery-caption">
+        <h3>Lawn Maintenance</h3>
+        <p>Routine mowing, edging, and lawn care.</p>
+      </div>
+    </article>
+
+    <article class="gallery-item" data-category="cleanup beforeafter">
+      <img src="images/gallery-cleanup-before-after-1.jpg" alt="Spring cleanup before and after">
+      <div class="gallery-caption">
+        <h3>Spring Cleanup</h3>
+        <p>Leaf and debris removal with clean results.</p>
+      </div>
+    </article>
+
+    <article class="gallery-item" data-category="landscape">
+      <img src="images/gallery-landscaping-1.jpg" alt="Landscaping flower bed and rock bed">
+      <div class="gallery-caption">
+        <h3>Landscaping</h3>
+        <p>Rock beds, mulch, plants, and pathways.</p>
+      </div>
+    </article>
+
+    <article class="gallery-item" data-category="dock">
+      <img src="images/gallery-dock-1.jpg" alt="Dock and hoist installation">
+      <div class="gallery-caption">
+        <h3>Docks & Hoists</h3>
+        <p>Dock installation, hoist setup, and rebuilds.</p>
+      </div>
+    </article>
+
+    <article class="gallery-item" data-category="landscape beforeafter">
+      <img src="images/gallery-before-after-1.jpg" alt="Before and after landscaping project">
+      <div class="gallery-caption">
+        <h3>Before & After</h3>
+        <p>Property transformations customers can see.</p>
+      </div>
+    </article>
+
+    <article class="gallery-item" data-category="dock beforeafter">
+      <img src="images/gallery-dock-rebuild-1.jpg" alt="Dock rebuild before and after">
+      <div class="gallery-caption">
+        <h3>Dock Rebuilds</h3>
+        <p>Complete dock rebuilds and replacements.</p>
+      </div>
+    </article>
+
+    <article class="gallery-item" data-category="cleanup">
+      <img src="images/gallery-cleanup-2.jpg" alt="Bed cleanout and property cleanup">
+      <div class="gallery-caption">
+        <h3>Bed Cleanouts</h3>
+        <p>Clean edges, beds, leaves, and debris.</p>
+      </div>
+    </article>
+
+    <article class="gallery-item" data-category="landscape">
+      <img src="images/gallery-mulch-rock-1.jpg" alt="Mulch and rock bed installation">
+      <div class="gallery-caption">
+        <h3>Mulch & Rock Beds</h3>
+        <p>Fresh curb appeal with clean landscape beds.</p>
+      </div>
+    </article>
+
+    <article class="gallery-item" data-category="lawn cleanup">
+      <img src="images/gallery-seasonal-1.jpg" alt="Seasonal property cleanup and lawn care">
+      <div class="gallery-caption">
+        <h3>Seasonal Property Care</h3>
+        <p>Keep your property looking its best all season.</p>
+      </div>
+    </article>
+  </section>
+
+  <div class="gallery-note">
+    <h2>How to Add Your Photos</h2>
+    <p>
+      Put your photos in the <strong>images</strong> folder and rename them to match the filenames used above.
+      You can add more cards by copying one gallery item block and changing the image name and category.
+    </p>
+  </div>
+
+  <div class="contact-strip gallery-cta">
+    <h2>Want Your Property Featured Next?</h2>
+    <p>Call today for a free estimate.</p>
+    <p><a href="tel:9892602081">Scott McLeod: 989-260-2081</a></p>
+    <p><a href="tel:9898205791">Scott Thompson: 989-820-5791</a></p>
+  </div>
+
+  <div class="gallery-note">
+    <h2>Admin Uploads</h2>
+    <p>
+      To upload and manage gallery photos later, go to <strong>/admin</strong> after Netlify Identity and Git Gateway are enabled.
+      Photos uploaded through the admin panel will save into <strong>images/uploads</strong>.
+    </p>
+  </div>
+
+</main>
+
+<footer>
+  <img src="images/logo.png" alt="Scott’s Lawn Maintenance logo">
+  <p><strong>Scott’s Lawn Maintenance</strong></p>
+  <p>Scott McLeod: 989-260-2081 | Scott Thompson: 989-820-5791</p>
+  <p>Authorized Lazy Turtle Docks Dealer</p>
+</footer>
+<script src="script.js"></script>
+
+<script>
+  if (window.netlifyIdentity) {
+    window.netlifyIdentity.on("init", user => {
+      if (!user && window.location.hash.includes("invite_token")) {
+        window.netlifyIdentity.open("signup");
+      }
+    });
+  }
+</script>
+
+</body>
+</html>

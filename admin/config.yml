@@ -1,0 +1,48 @@
+backend:
+  name: git-gateway
+  branch: main
+
+media_folder: "images/uploads"
+public_folder: "/images/uploads"
+
+site_url: "https://scottslawncare.netlify.app"
+display_url: "https://scottslawncare.netlify.app"
+logo_url: "/images/logo.png"
+
+collections:
+  - name: "gallery"
+    label: "Gallery Photos"
+    folder: "gallery"
+    create: true
+    slug: "{{slug}}"
+    extension: "json"
+    format: "json"
+    fields:
+      - {label: "Photo Title", name: "title", widget: "string"}
+      - {label: "Description", name: "description", widget: "text", required: false}
+      - label: "Category"
+        name: "category"
+        widget: "select"
+        options:
+          - {label: "Lawn Care", value: "lawn"}
+          - {label: "Spring Cleanups", value: "cleanup"}
+          - {label: "Landscaping", value: "landscape"}
+          - {label: "Docks & Hoists", value: "dock"}
+          - {label: "Before & After", value: "beforeafter"}
+          - {label: "Wood / Tree Cleanup", value: "wood"}
+          - {label: "Snow Plowing", value: "snow"}
+      - {label: "Photo", name: "image", widget: "image"}
+
+  - name: "settings"
+    label: "Business Settings"
+    files:
+      - file: "data/site-settings.json"
+        label: "Business Info"
+        name: "site_settings"
+        fields:
+          - {label: "Business Name", name: "businessName", widget: "string"}
+          - {label: "Scott McLeod Phone", name: "scottMcleodPhone", widget: "string"}
+          - {label: "Scott Thompson Phone", name: "scottThompsonPhone", widget: "string"}
+          - {label: "Website", name: "website", widget: "string"}
+          - {label: "Email", name: "email", widget: "string"}
+          - {label: "Authorized Dealer Text", name: "dealerText", widget: "string"}

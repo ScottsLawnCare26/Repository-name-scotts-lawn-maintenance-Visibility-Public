@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Contact | Scott’s Lawn Maintenance</title><link rel="stylesheet" href="style.css">  <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+</head>
+<body>
+<header class="header">
+  <div class="header-inner">
+    <a class="logo-wrap" href="index.html">
+      <img src="images/logo.png" alt="Scott’s Lawn Maintenance logo">
+      <span>Scott’s Lawn Maintenance</span>
+    </a>
+
+    <button class="menu-btn" id="menuBtn">☰</button>
+
+    <nav class="nav" id="navMenu">
+      <a href="index.html">Home</a>
+      <a href="services.html">Services</a>
+      <a href="pricing.html">Pricing</a>
+      <a href="docks-hoists.html">Docks & Hoists</a>
+      <a href="gallery.html">Gallery</a>
+      <a href="reviews.html">Reviews</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<main class="section">
+  <h1>Request a Free Estimate</h1>
+  <form name="contact" method="POST" data-netlify="true" action="thank-you.html" class="card">
+    <input type="hidden" name="form-name" value="contact">
+    <label>Name</label><input name="name" required>
+    <label>Phone</label><input name="phone" required>
+    <label>Email</label><input name="email" type="email">
+    <label>Address</label><input name="address">
+    <label>Service Needed</label>
+    <select name="service">
+      <option>Lawn Care</option>
+      <option>Spring Cleanup</option>
+      <option>Landscaping</option>
+      <option>Docks & Hoists</option>
+      <option>Dock Rebuild</option>
+      <option>Wood Splitting / Downed Tree Removal</option>
+    </select>
+    <label>Message</label><textarea name="message" rows="5"></textarea>
+    <button class="btn btn-primary" type="submit">Send Request</button>
+  </form>
+</main>
+<footer>
+  <img src="images/logo.png" alt="Scott’s Lawn Maintenance logo">
+  <p><strong>Scott’s Lawn Maintenance</strong></p>
+  <p>Scott McLeod: 989-260-2081 | Scott Thompson: 989-820-5791</p>
+  <p>Authorized Lazy Turtle Docks Dealer</p>
+</footer>
+<script src="script.js"></script>
+
+<script>
+  if (window.netlifyIdentity) {
+    window.netlifyIdentity.on("init", user => {
+      if (!user && window.location.hash.includes("invite_token")) {
+        window.netlifyIdentity.open("signup");
+      }
+    });
+  }
+</script>
+
+</body></html>

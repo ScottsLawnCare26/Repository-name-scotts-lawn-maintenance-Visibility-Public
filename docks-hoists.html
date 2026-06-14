@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Docks & Hoists | Scott’s Lawn Maintenance</title><link rel="stylesheet" href="style.css">  <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+</head>
+<body>
+<header class="header">
+  <div class="header-inner">
+    <a class="logo-wrap" href="index.html">
+      <img src="images/logo.png" alt="Scott’s Lawn Maintenance logo">
+      <span>Scott’s Lawn Maintenance</span>
+    </a>
+
+    <button class="menu-btn" id="menuBtn">☰</button>
+
+    <nav class="nav" id="navMenu">
+      <a href="index.html">Home</a>
+      <a href="services.html">Services</a>
+      <a href="pricing.html">Pricing</a>
+      <a href="docks-hoists.html">Docks & Hoists</a>
+      <a href="gallery.html">Gallery</a>
+      <a href="reviews.html">Reviews</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<main class="section">
+  <span class="badge">Authorized Lazy Turtle Docks Dealer</span>
+  <h1>Docks, Hoists & Complete Dock Rebuilds</h1>
+  <p class="lead">New marine-grade aluminum docks, dock rebuilds, dock installs, and hoist installation.</p>
+  <div class="cards">
+    <div class="card"><h3>Marine-Grade Aluminum</h3><p>Strong, durable, and built to last.</p></div>
+    <div class="card"><h3>Removable Deck Panels</h3><p>Easy seasonal storage and maintenance.</p></div>
+    <div class="card"><h3>Everything Included</h3><p>Sections include poles, hardware, and either pads or augers.</p></div>
+    <div class="card"><h3>Custom Layouts</h3><p>Designed to fit your shoreline and waterfront needs.</p></div>
+    <div class="card"><h3>Flood Relief</h3><p>$100 off each dock section for flood-affected customers with damaged or lost docks. Limited time.</p></div>
+    <div class="card"><h3>Hoist Installation</h3><p>Jet ski and boat hoist setup available.</p></div>
+  </div>
+</main>
+<footer>
+  <img src="images/logo.png" alt="Scott’s Lawn Maintenance logo">
+  <p><strong>Scott’s Lawn Maintenance</strong></p>
+  <p>Scott McLeod: 989-260-2081 | Scott Thompson: 989-820-5791</p>
+  <p>Authorized Lazy Turtle Docks Dealer</p>
+</footer>
+<script src="script.js"></script>
+
+<script>
+  if (window.netlifyIdentity) {
+    window.netlifyIdentity.on("init", user => {
+      if (!user && window.location.hash.includes("invite_token")) {
+        window.netlifyIdentity.open("signup");
+      }
+    });
+  }
+</script>
+
+</body></html>

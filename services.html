@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Services | Scott’s Lawn Maintenance</title><link rel="stylesheet" href="style.css">  <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+</head>
+<body>
+<header class="header">
+  <div class="header-inner">
+    <a class="logo-wrap" href="index.html">
+      <img src="images/logo.png" alt="Scott’s Lawn Maintenance logo">
+      <span>Scott’s Lawn Maintenance</span>
+    </a>
+
+    <button class="menu-btn" id="menuBtn">☰</button>
+
+    <nav class="nav" id="navMenu">
+      <a href="index.html">Home</a>
+      <a href="services.html">Services</a>
+      <a href="pricing.html">Pricing</a>
+      <a href="docks-hoists.html">Docks & Hoists</a>
+      <a href="gallery.html">Gallery</a>
+      <a href="reviews.html">Reviews</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<main class="section">
+  <h1>Services</h1>
+  <p class="lead">Outdoor property services for the upcoming season.</p>
+  <div class="cards">
+    <div class="card"><h3>Lawn Mowing</h3><p>Weekly and bi-weekly mowing, trimming, edging, and lawn maintenance.</p></div>
+    <div class="card"><h3>Spring Cleanups</h3><p>Leaves, debris, bed cleanouts, yard cleanup, and haul away.</p></div>
+    <div class="card"><h3>Thatching & Aeration</h3><p>Improve air, water, and nutrient flow for healthier grass.</p></div>
+    <div class="card"><h3>Landscaping</h3><p>Mulch, dirt, rocks, flowers, bushes, pathways, and bed installs.</p></div>
+    <div class="card"><h3>Docks & Hoists</h3><p>Dock installation, hoist installation, rebuilds, and replacements.</p></div>
+    <div class="card"><h3>Wood Services</h3><p>Wood splitting, stacking, downed tree removal, and cleanup.</p></div>
+  </div>
+</main>
+<footer>
+  <img src="images/logo.png" alt="Scott’s Lawn Maintenance logo">
+  <p><strong>Scott’s Lawn Maintenance</strong></p>
+  <p>Scott McLeod: 989-260-2081 | Scott Thompson: 989-820-5791</p>
+  <p>Authorized Lazy Turtle Docks Dealer</p>
+</footer>
+<script src="script.js"></script>
+
+<script>
+  if (window.netlifyIdentity) {
+    window.netlifyIdentity.on("init", user => {
+      if (!user && window.location.hash.includes("invite_token")) {
+        window.netlifyIdentity.open("signup");
+      }
+    });
+  }
+</script>
+
+</body></html>

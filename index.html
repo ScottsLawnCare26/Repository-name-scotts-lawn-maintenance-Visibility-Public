@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Scott’s Lawn Maintenance | Lawn Care, Landscaping, Docks & Hoists</title>
+  <meta name="description" content="Scott’s Lawn Maintenance offers lawn care, landscaping, spring cleanups, docks, hoists, and Lazy Turtle Docks dealer services.">
+  <link rel="stylesheet" href="style.css">
+  <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+</head>
+
+<body>
+<header class="header">
+  <div class="header-inner">
+    <a class="logo-wrap" href="index.html">
+      <img src="images/logo.png" alt="Scott’s Lawn Maintenance logo">
+      <span>Scott’s Lawn Maintenance</span>
+    </a>
+
+    <button class="menu-btn" id="menuBtn" type="button">☰</button>
+
+    <nav class="nav" id="navMenu">
+      <a href="index.html">Home</a>
+      <a href="services.html">Services</a>
+      <a href="pricing.html">Pricing</a>
+      <a href="docks-hoists.html">Docks & Hoists</a>
+      <a href="gallery.html">Gallery</a>
+      <a href="reviews.html">Reviews</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="hero-box">
+    <img class="hero-logo" src="images/logo.png" alt="Scott’s Lawn Maintenance logo">
+    <span class="eyebrow">Now Booking for the Season</span>
+    <h1>Lawn Care, Landscaping, Docks & Hoists</h1>
+    <p>Reliable local outdoor services for lawns, landscapes, waterfront properties, docks, and hoists.</p>
+    <div class="btn-row">
+      <a class="btn btn-primary" href="contact.html">Request Free Estimate</a>
+      <a class="btn btn-outline" href="docks-hoists.html">Dock Services</a>
+    </div>
+  </div>
+</section>
+
+<main>
+  <section class="section">
+    <h2>Our Services</h2>
+    <div class="cards">
+      <div class="card"><h3>Lawn Maintenance</h3><p>Weekly and bi-weekly mowing, trimming, edging, and seasonal lawn care.</p></div>
+      <div class="card"><h3>Spring Cleanups</h3><p>Leaf removal, bed cleanouts, debris removal, yard cleanup, dethatching, and aeration.</p></div>
+      <div class="card"><h3>Landscaping</h3><p>Mulch, dirt, rocks, flowers, bushes, pathways, rock beds, and flower beds.</p></div>
+      <div class="card"><h3>Docks & Hoists</h3><p>Dock installs, hoist installs, complete dock rebuilds, and seasonal setup.</p></div>
+      <div class="card"><h3>Lazy Turtle Docks</h3><p>New marine-grade aluminum docks with removable deck panels and custom layouts.</p></div>
+      <div class="card"><h3>Wood & Cleanup</h3><p>Wood splitting, stacking, downed tree removal, and property cleanup.</p></div>
+    </div>
+  </section>
+
+  <section class="section section-dark">
+    <div class="section-inner split">
+      <div>
+        <span class="badge">Authorized Lazy Turtle Docks Dealer</span>
+        <h2>Marine-Grade Aluminum Docks</h2>
+        <p>Dock sections include poles, hardware, and either pads or augers. Custom shoreline layouts available.</p>
+      </div>
+      <ul class="feature-list">
+        <li>Marine-grade aluminum</li>
+        <li>Removable deck panels</li>
+        <li>Custom layouts</li>
+        <li>Professional installation</li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="contact-strip">
+    <h2>Call Today for a Free Estimate</h2>
+    <p><a href="tel:9892602081">Scott McLeod: 989-260-2081</a></p>
+    <p><a href="tel:9898205791">Scott Thompson: 989-820-5791</a></p>
+  </section>
+</main>
+
+<footer>
+  <img src="images/logo.png" alt="Scott’s Lawn Maintenance logo">
+  <p><strong>Scott’s Lawn Maintenance</strong></p>
+  <p>Scott McLeod: 989-260-2081 | Scott Thompson: 989-820-5791</p>
+  <p>Authorized Lazy Turtle Docks Dealer</p>
+</footer>
+
+<script src="script.js"></script>
+<script>
+  if (window.netlifyIdentity) {
+    window.netlifyIdentity.on("init", user => {
+      if (!user && window.location.hash.includes("invite_token")) {
+        window.netlifyIdentity.open("signup");
+      }
+    });
+  }
+</script>
+</body>
+</html>
